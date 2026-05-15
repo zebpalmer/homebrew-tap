@@ -5,21 +5,21 @@
 class Stratt < Formula
   desc "A polyglot task runner that replaces Makefiles, manages release versions, and handles Kustomize image bumps."
   homepage "https://stratt.sh"
-  version "0.5.0"
+  version "0.5.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zebpalmer/stratt/releases/download/v0.5.0/stratt_0.5.0_darwin_amd64.tar.gz"
-      sha256 "478b156af17699d0369695e0aadf2911f46d278587cec4bf58ff9bd85e22838e"
+      url "https://github.com/zebpalmer/stratt/releases/download/v0.5.1/stratt_0.5.1_darwin_amd64.tar.gz"
+      sha256 "5ea85a95a41919bb83bee0236266de30ce41c4f629c72d27b01aae1e23613357"
 
       define_method(:install) do
         bin.install "stratt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zebpalmer/stratt/releases/download/v0.5.0/stratt_0.5.0_darwin_arm64.tar.gz"
-      sha256 "1b4d3ec4bcc693216daf16ae5de3e7d4364461551f4420c78430ef1254a10101"
+      url "https://github.com/zebpalmer/stratt/releases/download/v0.5.1/stratt_0.5.1_darwin_arm64.tar.gz"
+      sha256 "05e3ec09997a0f64049a9c3d94604368430af378a0c12b63a27b3a10c97de4aa"
 
       define_method(:install) do
         bin.install "stratt"
@@ -29,15 +29,15 @@ class Stratt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zebpalmer/stratt/releases/download/v0.5.0/stratt_0.5.0_linux_amd64.tar.gz"
-      sha256 "753ca9f454b9ffb06f3aabc530a3b89d3d12cec23807a4eb17a5349aa7bc66d4"
+      url "https://github.com/zebpalmer/stratt/releases/download/v0.5.1/stratt_0.5.1_linux_amd64.tar.gz"
+      sha256 "837e7a94da8a9d0ba30f9895a6d4712f0e5034030f7626b311348cdb7abb390c"
       define_method(:install) do
         bin.install "stratt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zebpalmer/stratt/releases/download/v0.5.0/stratt_0.5.0_linux_arm64.tar.gz"
-      sha256 "c2fc42f57cb10344f7d1195fd6c286a0eda87d7cbb52dd86e4a8ba69d24339ed"
+      url "https://github.com/zebpalmer/stratt/releases/download/v0.5.1/stratt_0.5.1_linux_arm64.tar.gz"
+      sha256 "56e3f8ee11cd42aaf12f24f5ce57d93e836d2d12296b315ef17807e21a0c049a"
       define_method(:install) do
         bin.install "stratt"
       end
